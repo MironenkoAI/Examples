@@ -1,5 +1,5 @@
 ﻿// Лекция 1, программа Hello_User
-Console.WriteLine("Введите ваше имя");
+Console.WriteLine("Введите ваше имя:");
 string username = Console.ReadLine();
 Console.Write("Привет, ");
-Console.Write(username);
+Console.Write(username + "!");
