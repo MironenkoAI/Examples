@@ -166,6 +166,10 @@ void FillMatrixRandomNumbers(int[,] array)
         for(int j = 0; j < array.GetLength(1); j++)
         {
             array[i, j] = new Random().Next(1, 10);
+        }
+    }
+}
+
 void WriteMatrix(int[,] array)
 {
     for(int i = 0; i < array.GetLength(0); i++)
