@@ -42,7 +42,7 @@ else if(x > 0 && y < 0)
 {     
     Console.WriteLine("4"); 
 }  
-int ReadInt(string message) 
+int ReadInt(string message) //для всех последующих задач
 {     
     Console.Write(message);     
     return Convert.ToInt32(Console.ReadLine()); 
@@ -51,36 +51,31 @@ int ReadInt(string message)
 //ВАРИАНТ 2:
 while(true) 
 {     
-    int x = ReadInt("Введите точку x: ");     
-    int y = ReadInt("Введите точку y: ");      
-    if(x == 0 || y == 0)     
+    int X = ReadInt("Введите точку x: ");     
+    int Y = ReadInt("Введите точку y: ");      
+    if(X == 0 || Y == 0)     
     {         
         Console.WriteLine("x и y не могут быть равны 0");         
         continue;     
     }      
-    if (x > 0 && y > 0)     
+    if (X > 0 && Y > 0)     
     {         
         Console.WriteLine("1");     
     }     
-    else if(x < 0 && y > 0)     
+    else if(X < 0 && Y > 0)     
     {         
         Console.WriteLine("2");     
     }     
-    else if(x < 0 && y < 0)     
+    else if(X < 0 && Y < 0)     
     {         
         Console.WriteLine("3");     
     }     
-    else if(x > 0 && y < 0)     
+    else if(X > 0 && Y < 0)     
     {         
         Console.WriteLine("4");     
     }     
     break; 
 }   
-int ReadInt(string message) 
-{     
-    Console.Write(message);     
-    return Convert.ToInt32(Console.ReadLine()); 
-}
 
 //18. Напишите программу, которая по заданному номеру четверти, 
 //показывает диапазон возможных координат точек в этой четверти (x и y).
@@ -106,15 +101,10 @@ else
 {     
     Console.WriteLine("Четвертей всего 4!"); 
 }   
-int ReadInt(string message) 
-{     
-    Console.Write(message);     
-    return Convert.ToInt32(Console.ReadLine()); 
-}
 
 //ВАРИАНТ 2:
-int quarter = ReadInt("Введите номер четверти: "); 
-switch (quarter) 
+int Quarter = ReadInt("Введите номер четверти: "); 
+switch (Quarter) 
 {     
     case 1:         
     Console.WriteLine("x > 0, y > 0");         
@@ -132,16 +122,10 @@ switch (quarter)
     Console.WriteLine("Четвертей всего 4!");         
     break; 
 }  
-int ReadInt(string message) 
-{     
-    Console.Write(message);     
-    return Convert.ToInt32(Console.ReadLine()); 
-}
-
 
 //КОРЕНЬ:
-int number = 9; 
-int result = Math.Sqrt(number); 
+int Number = 9; 
+double result = Math.Sqrt(Number); 
 Console.WriteLine(result);
 
 //Напишите программу, которая принимает на вход координаты двух точек 
@@ -156,45 +140,30 @@ int sqrSideX = (aX - bX) * (aX - bX);
 int sqrSideY = (aY - bY) * (aY - bY); 
 double distance = Math.Sqrt(sqrSideX + sqrSideY); 
 Console.WriteLine(distance);  
-int ReadInt(string message) 
-{     
-    Console.Write(message);     
-    return Convert.ToInt32(Console.ReadLine()); 
-}
 
 //Напишите программу, которая принимает на вход число (N) и выдаёт 
 //таблицу квадратов чисел  от 1 до N. 5 -> 1, 4, 9, 16, 25. 2 -> 1,4
 
-int number = ReadInt("Введите число: "); 
+int Num = ReadInt("Введите число: "); 
 int i = 1; 
-while(i <= number) 
+while(i <= Num) 
 {     
     Console.Write(i*i + " ");     
     i++; 
 }  
-int ReadInt(string message) 
-{     
-    Console.Write(message);     
-    return Convert.ToInt32(Console.ReadLine()); 
-}
-
+/*
 //ВАРИАНТ 2:
-int number = ReadInt("Введите число: "); 
+int num = ReadInt("Введите число: "); 
 int i = 1; 
-while(i <= number) 
+while(i <= num) 
 {     
     Console.Write(i*i++ + " "); 
 }  
-int ReadInt(string message) 
-{     
-    Console.Write(message);     
-    return Convert.ToInt32(Console.ReadLine()); 
-}
 
 //ВАРИАНТ 3:
-int number = ReadInt("Введите число: "); 
+int numb = ReadInt("Введите число: "); 
 int i = 1; 
-while(i <= number) 
+while(i <= numb) 
 {     
     Console.Write(Pow(i++) + " "); 
 }  
@@ -202,8 +171,4 @@ int Pow(int a)
 {     
     return a * a; 
 }  
-int ReadInt(string message) 
-{     
-    Console.Write(message);     
-    return Convert.ToInt32(Console.ReadLine()); 
-}
+*/
